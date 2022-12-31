@@ -17,3 +17,8 @@ app.post('/test', function(req, res){
     console.log(req.rawBody);
     res.send("your request raw body is:"+req.rawBody);
 });
+
+
+app.listen('3000', 'localhost', (e) => {
+ console.log('Listening on localhost:3000');
+});
