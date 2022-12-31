@@ -9,12 +9,11 @@ app.use(function(req, res, next){
       req.rawBody = data;
       next();
    })
-})
+});
 
 // Your route registration:
-app.get('/', function(){// whatever...})
 
 app.post('/test', function(req, res){
     console.log(req.rawBody);
     res.send("your request raw body is:"+req.rawBody);
-})
+});
