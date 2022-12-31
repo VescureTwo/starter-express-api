@@ -5,8 +5,8 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/post-test', (req, res) => {
-    console.log('Got body:', req.rawBody);
-    res.sendStatus(200);
+    const body = req.body
+    console.log(body)
 });
 
 app.listen(8080, () => console.log(`Started server at http://localhost:8080!`));
