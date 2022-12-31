@@ -5,7 +5,7 @@ const app = express();
 // app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/post-test', (req, res) => {
-    const body = req.body
+    const body = req.data
 
     console.log(body)
 });
