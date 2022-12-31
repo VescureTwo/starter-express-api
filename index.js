@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 const app = express();
-app.use(bodyparser.json({limit: '50mb'}));
+app.use(bodyParser.json({limit: '50mb'}));
 
 
 
