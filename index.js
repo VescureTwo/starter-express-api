@@ -5,7 +5,7 @@ const app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/post-test', (req, res) => {
-    console.log('Got body:', req.body);
+    console.log('Got body:', req.rawBody);
     res.sendStatus(200);
 });
 
