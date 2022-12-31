@@ -6,10 +6,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.raw());
 
 app.post('/post-test', (req, res) => {
-    const body = req.rawBody
+    const body = req.data
 
     console.log(body);
-    res.send()
 });
 
 app.listen(8080, () => console.log(`Started server at http://localhost:8080!`));
