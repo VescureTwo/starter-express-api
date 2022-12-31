@@ -13,7 +13,7 @@ app.use(function(req, res, next){
 
 // Your route registration:
 
-app.post('/test', function(req, res){
+app.post('/post-test', function(req, res){
     console.log(req.rawBody);
     res.send("your request raw body is:"+req.rawBody);
 });
