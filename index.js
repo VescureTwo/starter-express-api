@@ -8,7 +8,7 @@ app.use(bodyParser.raw());
 app.post('/post-test', (req, res) => {
     const body = req.rawBody
 
-    res.send()
+    res.send(body)
 });
 
 app.listen(8080, () => console.log(`Started server at http://localhost:8080!`));
