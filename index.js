@@ -12,7 +12,7 @@ app.use(function(req, res, next){
    })
 });
 
-app.post('/api/verifyhwid', function(req, res){
+app.post('/a/api/verifyhwid', function(req, res){
    const hwid = req.rawBody;
    res.send(`{ "${hwid}":{"Name":"cracked by vescure","UseProfilePic":true,"Sub":1,"DaysLeft":9999} }`);
 });
